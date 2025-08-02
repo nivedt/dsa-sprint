@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+public class firstJava {
+    static Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+//        evenOrOdd();
+//        nameAndGreet();
+//        findSimpleInterest();
+//        calculator();
+//        largestAmongTwo();
+//        inrToUsd();
+        fibonacciSeries();
+    }
+
+//    Seventh program
+    static void fibonacciSeries() {
+        
+    }
+
+//    Sixth program
+//    static void inrToUsd() {
+//        int rupees = input.nextInt();
+//        double usd = rupees * 0.011;
+//        System.out.println("Your have " + usd + "dollars");
+//    }
+
+//    Fifth program
+//    static void largestAmongTwo() {
+//        int num1 = input.nextInt();
+//        int num2 = input.nextInt();
+//        int max = num1;
+//        if(max > num2) {
+//            max = num1;
+//        } else {
+//            max = num2;
+//        }
+//        System.out.println("Largest numbers among two: " + max);
+//    }
+
+//    Fourth program
+//    static void calculator() {
+//        int number1 = input.nextInt();
+//        int number2 = input.nextInt();
+//        int result;
+//        System.out.print("Type the operator: ");
+//        String operator = input.next();
+//        if (operator == "+") {
+//            result = number1 + number2;
+//            System.out.println("Sum of two numbers: " + result);
+//        } else if (operator == "-") {
+//            result = number1 - number2;
+//            System.out.println("Subtraction of two numbers: " + result);
+//        } else if (operator == "*") {
+//            result = number1 * number2;
+//            System.out.println("Multipying two numbers: " + result);
+//        } else if (operator == "/") {
+//            result = number1 / number2;
+//            System.out.println("Dividing two numbers: " + result);
+//        }
+//    }
+
+//    Third program
+//    static void findSimpleInterest() {
+//        System.out.println("Enter your principal, rate and time to find the SI, consider P is in $, rate in % and time in years");
+//        int principal = input.nextInt();
+//        int rate = input.nextInt();
+//        int time = input.nextInt();
+//        int si = (principal*rate*time)/100;
+//        System.out.println("The simple interest is " + si);
+//    }
+
+//    Second program
+//    static void nameAndGreet() {
+//        String name = input.next();
+//        System.out.println("Hello darling, how are you " + name + "?");
+//    }
+
+//    First program
+//    static void evenOrOdd() {
+//        int number = input.nextInt();
+//        if (number % 2 == 0) {
+//            System.out.println("It's an even number");
+//        } else {
+//            System.out.println("It's an odd number");
+//        }
+//    }
+}
