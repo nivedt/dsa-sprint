@@ -9,13 +9,33 @@ public class firstJava {
 //        calculator();
 //        largestAmongTwo();
 //        inrToUsd();
-        fibonacciSeries();
+//        fibonacciSeries(5);
+        palindromeOrNot(1221);
+    }
+//    Ninth program
+    static void ArmstrongOfTwoNumbers() {
+
     }
 
-//    Seventh program
-    static void fibonacciSeries() {
-        
+//    Eighth program
+    static void palindromeOrNot() {
+
     }
+
+
+//    Seventh program
+//    static void fibonacciSeries(int num) {
+//        int num1 = 0;
+//        int num2 = 1;
+//        int nextNum = 0;
+//        for (int i = 2; i < num; i++) {
+//            nextNum = num1 + num2;
+//            num1 = num2;
+//            num2 = nextNum;
+////            System.out.println(nextNum);
+//        }
+//        System.out.println("Fibo series sum is: " + nextNum);
+//    }
 
 //    Sixth program
 //    static void inrToUsd() {
