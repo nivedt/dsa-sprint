@@ -9,8 +9,8 @@ public class firstJava {
 //        calculator();
 //        largestAmongTwo();
 //        inrToUsd();
-//        fibonacciSeries(5);
-        palindromeOrNot(1221);
+        fibonacciSeries(5);
+//        palindromeOrNot(1221);
     }
 //    Ninth program
     static void ArmstrongOfTwoNumbers() {
@@ -24,7 +24,17 @@ public class firstJava {
 
 
 //    Seventh program
-//    static void fibonacciSeries(int num) {
+    static void fibonacciSeries(int num) {
+        int n = 10, firstNum = 0, secondNum = 1;
+        int nextNum;
+
+        for (int i=1; i<=n; i++) {
+            System.out.print(firstNum + ", ");
+            nextNum = firstNum + secondNum;
+            firstNum = secondNum;
+            secondNum = nextNum;
+        }
+
 //        int num1 = 0;
 //        int num2 = 1;
 //        int nextNum = 0;
@@ -35,7 +45,7 @@ public class firstJava {
 ////            System.out.println(nextNum);
 //        }
 //        System.out.println("Fibo series sum is: " + nextNum);
-//    }
+    }
 
 //    Sixth program
 //    static void inrToUsd() {
