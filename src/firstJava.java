@@ -9,31 +9,65 @@ public class firstJava {
 //        calculator();
 //        largestAmongTwo();
 //        inrToUsd();
-        fibonacciSeries(5);
-//        palindromeOrNot(1221);
+//        fibonacciSeries(5);
+//        palindromeOrNot("HelleH");
+        armstrongOfTwoNumbers();
     }
 //    Ninth program
-    static void ArmstrongOfTwoNumbers() {
+    static void armstrongOfTwoNumbers() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter lower bound: ");
+        int low = input.nextInt();
 
+        System.out.println("Enter upper bound: ");
+        int high = input.nextInt();
+
+        System.out.println("Armstrong numbers between" + low + " and " + high + ":");
+        for (int num = low; num <= high; num++) {
+            if (isArmstrong(num)) {
+                System.out.println(num + " ");
+            }
+        }
+    }
+
+    static boolean isArmstrong(int num) {
+        int temp = num;
+        int digits = String.valueOf(num).length();
+        int sum = 0;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+            sum += Math.pow(digit, digits);
+            temp /= 10;
+        }
+        return sum == num;
     }
 
 //    Eighth program
-    static void palindromeOrNot() {
-
-    }
-
+//    static boolean palindromeOrNot(String s) {
+//
+//        if (s == null) return false;
+//        int i = 0, j = s.length() - 1;
+//        while (i < j) {
+//            if(s.charAt(i) != s.charAt(j)) return false;
+////            System.out.println("False");
+//            i++; j--;
+//        }
+//        System.out.println("True");
+//        return true;
+//    }
 
 //    Seventh program
-    static void fibonacciSeries(int num) {
-        int n = 10, firstNum = 0, secondNum = 1;
-        int nextNum;
-
-        for (int i=1; i<=n; i++) {
-            System.out.print(firstNum + ", ");
-            nextNum = firstNum + secondNum;
-            firstNum = secondNum;
-            secondNum = nextNum;
-        }
+//    static void fibonacciSeries(int num) {
+//        int n = 10, firstNum = 0, secondNum = 1;
+//        int nextNum;
+//
+//        for (int i=1; i<=n; i++) {
+//            System.out.print(firstNum + ", ");
+//            nextNum = firstNum + secondNum;
+//            firstNum = secondNum;
+//            secondNum = nextNum;
+//        }
 
 //        int num1 = 0;
 //        int num2 = 1;
@@ -45,7 +79,7 @@ public class firstJava {
 ////            System.out.println(nextNum);
 //        }
 //        System.out.println("Fibo series sum is: " + nextNum);
-    }
+//    }
 
 //    Sixth program
 //    static void inrToUsd() {
