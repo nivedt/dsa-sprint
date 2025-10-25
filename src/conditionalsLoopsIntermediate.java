@@ -18,13 +18,158 @@ public class conditionalsLoopsIntermediate {
 //        sumOfNNumbers();
 //        armstrongNumber();
 //        nPrAndnCr();
-        reverseAString();
-
+//        reverseAString();
+//        palindromeOrNot();
+//        palindromeString();
+//        futureInvestmentValue();
+//        futureInvestmentValueMonthly();
+//        hcfOfTwoNumbers();
+//        lcmOfTwoNumbers();
+        
 
     }
-    public static void reverseAString() {
-        System.out.println("Enter ");
-    }
+
+//    public static void lcmOfTwoNumbers() {
+//        System.out.print("Enter first number: ");
+//        int num1 = input.nextInt();
+//
+//        System.out.print("Enter second number: ");
+//        int num2 = input.nextInt();
+//
+//        int a = num1;
+//        int b = num2;
+//
+//        // Step 1: Find HCF using Euclidean Algorithm
+//        while (b != 0) {
+//            int temp = b;
+//            b = a % b;
+//            a = temp;
+//        }
+//
+//        int hcf = a;
+//
+//        int lcm = (num1 * num2) / hcf;
+//
+//        System.out.println("HCF of " + num1 + " and " + num2 + " = " + hcf);
+//        System.out.println("LCM of " + num1 + " and " + num2 + " = " + lcm);
+//        input.close();
+//    }
+
+//    public static void hcfOfTwoNumbers() {
+//        System.out.println("Enter first number: ");
+//        int num1 = input.nextInt();
+//
+//        System.out.println("Enter second number: ");
+//        int num2 = input.nextInt();
+//
+//        int hcf = 1;
+//
+//        for (int i = 1; i <= num1 && i < num2; i++) {
+//            if (num1 % i ==0 && num2 % i == 0) {
+//                hcf = i;
+//            }
+//        }
+//
+//        System.out.println("HCF of " + num1 + " and " + num2 + " is: " + hcf);
+//        input.close();
+//    }
+
+//    public static void futureInvestmentValueMonthly() {
+//        System.out.println("Enter PTR respectively for monthly: ");
+//        double principal = input.nextDouble();
+//        double rate = input.nextDouble();
+//        int time = input.nextInt();
+//
+//        double futureValue = principal * (Math.pow((1 + rate/100*12), 12*time));
+//        System.out.printf("Future Investment Value after %d years: %.2f", time, futureValue);
+//        input.close();
+//    }
+
+//    public static void futureInvestmentValue() {
+//        System.out.println("Enter PTR respectively: ");
+//        double principal = input.nextDouble();
+//        double rate = input.nextDouble();
+//        int time = input.nextInt();
+//
+//        double futureValue = principal * (Math.pow((1 + rate/100), time));
+//        System.out.printf("Future Investment Value after %d years: %.2f", time, futureValue);
+//        input.close();
+//    }
+
+//    public static void palindromeString() {
+//        System.out.println("Enter a String: ");
+//        String str = input.nextLine();
+//
+//        String reversed = new StringBuilder(str).reverse().toString();
+//
+//        if (str.equalsIgnoreCase(reversed)) {
+//            System.out.println(str + " is a palindrome");
+//        } else {
+//            System.out.println(str + " is NOT a palindrome");
+//        }
+//    }
+
+//    public static void palindromeOrNot() {
+//        System.out.println("Enter a number: ");
+//        int number = input.nextInt();
+//
+//        int originalNumber = number;
+//        int reversed = 0;
+//
+//        while (number != 0) {
+//            int digit = number % 10;
+//            reversed = reversed * 10 + digit;
+//            number = number / 10;
+//        }
+//
+//        if (originalNumber == reversed) {
+//            System.out.println(originalNumber + " is a palindrome number.");
+//        } else {
+//            System.out.println(originalNumber + " is NOT a palindrome number.");
+//        }
+//    }
+
+    // This is a trial by me
+//    public static void palindromeOrNot() {
+//        System.out.println("Enter a number to check if it's a palindrome or not: ");
+//        int number = input.nextInt();
+//        int length = String.valueOf(number).length();
+////        System.out.println(length);
+//        int reversed = 0;
+//
+//        for (int i = 0; i < length; i++) {
+//            int temp = number % 10;
+//            System.out.println(temp);
+////            reversed = (temp * 10) + temp;
+////            System.out.println(temp);
+//            number /= 10;
+//            reversed = (reversed * 10) + temp;
+//            System.out.println(reversed);
+////            System.out.println(number);
+//
+//
+//        }
+//        if (number == reversed) {
+//            System.out.println("This is a palindrome number");
+//        } else {
+//            System.out.println("It's not a palindrome!");
+//        }
+////        System.out.println(reversed);
+//        input.close();
+//    }
+
+//    public static void reverseAString() {
+//        System.out.println("Enter a string: ");
+//        String word = input.next();
+//        int length = word.length();
+//        String reversedWord = "";
+//        for (int i = length - 1; i >= 0; i--) {
+//            reversedWord += word.charAt(i);
+//        }
+//        System.out.println("This is your reversed string: " + reversedWord);
+//        input.close();
+//    }
+
 //    static long factorial(int num) {
 //        long fact = 1;
 //        for (int i = 1; i <= num; i++) {
