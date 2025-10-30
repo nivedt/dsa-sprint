@@ -25,9 +25,112 @@ public class conditionalsLoopsIntermediate {
 //        futureInvestmentValueMonthly();
 //        hcfOfTwoNumbers();
 //        lcmOfTwoNumbers();
-        
+//        vowelOrConsonant();
+//        perfectNumber();
+//        leapYearOrNot();
+//        sumOfADigitsOfNumber();
+//        numberOfDaysKunalCanGoOut();
+        sumOfNegativeAndPositiveNumbers();
 
     }
+    public static void sumOfNegativeAndPositiveNumbers() {
+        System.out.println("Enter a series of number: ");
+        int sumNegative = 0;
+        int sumEven = 0;
+        int sumOdd = 0;
+        int number;
+
+        while (true) {
+            number = input.nextInt();
+            if (number == 0) {
+                break;
+            }
+
+            if (number < 0) {
+                sumNegative += number;
+            } else if (number % 2 == 0) {
+                sumEven += number;
+            } else {
+                sumOdd += number;
+            }
+        }
+        System.out.println("Sum of negative numbers: " + sumNegative);
+        System.out.println("Sum of positive even numbers: " + sumEven);
+        System.out.println("Sum of positive odd numbers: " + sumOdd);
+    }
+
+//    public static void numberOfDaysKunalCanGoOut() {
+//        int daysInAugust = 31;
+//        int sum = 0;
+//        for (int day = 1; day <= daysInAugust; day++){
+//            if (day % 2 == 0){
+//                sum += 1;
+//            }
+//        }
+//        System.out.println(sum + " are the number of days that Kunal can go out!");
+//    }
+
+//    public static void sumOfADigitsOfNumber() {
+//        System.out.println("Enter an integer: ");
+//        int n = input.nextInt();
+//        int sum = 0;
+//
+//        while (n != 0) {
+//            sum += n % 10;
+//            n /= 10;
+//        }
+//        System.out.println(sum + " is the sum of digits of a number.");
+//    }
+
+//    public static void leapYearOrNot() {
+//        System.out.println("Enter a year: ");
+//        int year = input.nextInt();
+//
+//        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+//            System.out.println(year + " is a leap year.");
+//        } else {
+//            System.out.println(year + " is NOT a leap year.");
+//        }
+//        input.close();
+//    }
+
+//    public static void perfectNumber() {
+//        System.out.println("Enter a number: ");
+//        int num = input.nextInt();
+//        int sum = 0;
+//
+//        for (int i = 1; i <= num / 2; i++) {
+//            if (num % i == 0) {
+//                sum += i;
+//            }
+//        }
+//
+//        if (sum == num && num != 0) {
+//            System.out.println(num + " is a Perfect Number.");
+//        } else {
+//            System.out.println(num + " is NOT a Perfect Number");
+//        }
+//        input.close();
+//    }
+
+//    public static void vowelOrConsonant() {
+//        System.out.println("Enter a letter: ");
+//        char ch = input.next().charAt(0);
+//
+//        if ((ch >= 'a' && ch <= 'z' ) || (ch >= 'A' && ch <= 'Z')) {
+//
+//            ch = Character.toLowerCase(ch);
+//
+//            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+//                System.out.println("It's a Vowel");
+//            } else {
+//                System.out.println("It's a Consonant.");
+//            }
+//        } else {
+//            System.out.println("Invalid input! Please enter an alphabet.");
+//        }
+//        input.close();
+//    }
 
 //    public static void lcmOfTwoNumbers() {
 //        System.out.print("Enter first number: ");
