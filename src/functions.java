@@ -5,19 +5,62 @@ public class functions {
     public static void main(String[] args) {
 //        MaxMinNumbers();
 //        oddOrEven();
-        votingEligibility();
+//        votingEligibility();
+//        sumOfTwoNumberEnteredByUser();
+//        productOfTwoNumberEnteredByUser();
+        circumferenceAndAreaOfCircle();
+
+
     }
 
-    static void votingEligibility() {
-        System.out.println("Enter your age: ");
+    static void circumferenceAndAreaOfCircle() {
+        System.out.println("Enter the radius of a circle: ");
 
-        int age = input.nextInt();
-        if (age >= 18) {
-            System.out.println("You are ligible to vote");
-        } else {
-            System.out.println("You are NOT eligible to vote.");
-        }
+        float radius = input.nextFloat();
+        double circumference = circumferenceOfCircle(radius);
+        double area = areaOfCircle(radius);
+
+        System.out.println("Circumference and radius of the circle are: " + circumference + " and " + area);
     }
+
+    static double circumferenceOfCircle(double r) {
+        return 2 * Math.PI * r;
+    }
+
+    static double areaOfCircle(double r) {
+        return Math.PI * r * r;
+    }
+
+//    static void productOfTwoNumberEnteredByUser() {
+//        System.out.println("Enter two numbers: ");
+//
+//        int num1 = input.nextInt();
+//        int num2 = input.nextInt();
+//
+//        int product = num1 * num2;
+//        System.out.println("Product of two numbers entered by the user " + product);
+//    }
+
+//    static void sumOfTwoNumberEnteredByUser() {
+//        System.out.println("Enter two numbers: ");
+//
+//        int num1 = input.nextInt();
+//        int num2 = input.nextInt();
+//
+//        int sum = num1 + num2;
+//        System.out.println("Sum of two numbers entered by the user " + sum);
+//    }
+
+//    static void votingEligibility() {
+//        System.out.println("Enter your age: ");
+//
+//        int age = input.nextInt();
+//        if (age >= 18) {
+//            System.out.println("You are ligible to vote");
+//        } else {
+//            System.out.println("You are NOT eligible to vote.");
+//        }
+//    }
 
 //    static void oddOrEven() {
 //        System.out.println("Enter a number: ");
