@@ -8,28 +8,140 @@ public class functions {
 //        votingEligibility();
 //        sumOfTwoNumberEnteredByUser();
 //        productOfTwoNumberEnteredByUser();
-        circumferenceAndAreaOfCircle();
-
+//        circumferenceAndAreaOfCircle();
+//        primeCheck();
+//        gradeCalculator();
+//        factorialProgram();
+        palindromeProgram();
 
     }
+    
+    public static void palindromeProgram() {
+        System.out.println("Enter a number: ");
+        int num = input.nextInt();
+        int n = num;
+        int reversed = 0;
 
-    static void circumferenceAndAreaOfCircle() {
-        System.out.println("Enter the radius of a circle: ");
+        while (n > 0) {
+            int digit = n % 10;
+            reversed = reversed * 10 + digit;
+            n /= 10;
+        }
 
-        float radius = input.nextFloat();
-        double circumference = circumferenceOfCircle(radius);
-        double area = areaOfCircle(radius);
-
-        System.out.println("Circumference and radius of the circle are: " + circumference + " and " + area);
+        if (num == reversed) {
+            System.out.println(num + " is a palindrome!");
+        } else {
+            System.out.println(num + " is not a palindrome");
+        }
     }
 
-    static double circumferenceOfCircle(double r) {
-        return 2 * Math.PI * r;
-    }
+//    public static void factorialProgram() {
+//        System.out.println("Enter a number: ");
+//        int num = input.nextInt();
+//        int factorial = 1;
+//        if (num < 0) {
+//            System.out.println("Invalid!, to get a factorial, numbers must be positive. ");
+//        }
+//
+//        if (num == 1 || num == 0) {
+//            System.out.println("1! or 0! the result is 1 itself ");
+//        }
+//        for (int i = num; i > 0; i--) {
+//            factorial *= i;
+//            System.out.println("Your factorial is: " + factorial);
+//        }
+//    }
 
-    static double areaOfCircle(double r) {
-        return Math.PI * r * r;
-    }
+//    public static void gradeCalculator() {
+//        System.out.println("Enter your marks out of 100: ");
+//
+//        double marks = input.nextDouble();
+//        displayGrade(marks);
+//    }
+
+//    static void displayGrade(double marks) {
+//        if (marks < 0 || marks > 100) {
+//            System.out.println("Invalid marks! Enter between 0 and 100.");
+//        }
+//
+//        if (marks >= 90) {
+//            System.out.println("Grade is AB.");
+//        } else if (marks >= 80) {
+//            System.out.println("Grade is BB.");
+//        } else if (marks >= 70) {
+//            System.out.println("Grade is BC.");
+//        } else if (marks >= 60) {
+//            System.out.println("Grade is CD.");
+//        } else if (marks >= 50) {
+//            System.out.println("Grade is DD.");
+//        } else {
+//            System.out.println("Grade: Fail.");
+//        }
+//    }
+
+//    My try
+//    static void gradeCalculator() {
+//        System.out.println("Enter your marks out of 100: ");
+//
+//        double marks = input.nextDouble();
+//        if (marks <= 40) {
+//            System.out.println("Your grade is fail.");
+//        } else if (marks > 40 && marks < 51) {
+//            System.out.println("Your grade is DD. ");
+//        } else if (marks > 50 && marks < 61) {
+//            System.out.println("Your grade is CD. ");
+//        } else if (marks > 60 && marks < 71) {
+//            System.out.println("Your grade is BC. ");
+//        } else if (marks > 70 && marks < 81) {
+//            System.out.println("Your grade is BB. ");
+//        } else if (marks > 80 && marks < 91) {
+//            System.out.println("Your grade is AB. ");
+//        } else if (marks > 90 && marks < 101) {
+//            System.out.println("Your grade is AA. ");
+//        }
+//    }
+
+//    static void primeCheck() {
+//        System.out.println("Enter a number to check if it's prime or not: ");
+//
+//        int num = input.nextInt();
+//
+//        if (isPrime(num)) {
+//            System.out.println(num + " is a Prime number");
+//        } else {
+//            System.out.println(num + " is NOT a prime number");
+//        }
+//    }
+
+//    To check prime number
+//    static boolean isPrime(int n) {
+//        if (n <= 1) return false;
+//        if (n == 2) return false;
+//        if (n % 2 == 0) return false;
+//
+//        for (int i = 3; i * i <= n; i += 2) {
+//            if (n % i == 0) return false;
+//        }
+//        return true;
+//    }
+
+//    static void circumferenceAndAreaOfCircle() {
+//        System.out.println("Enter the radius of a circle: ");
+//
+//        float radius = input.nextFloat();
+//        double circumference = circumferenceOfCircle(radius);
+//        double area = areaOfCircle(radius);
+//
+//        System.out.println("Circumference and radius of the circle are: " + circumference + " and " + area);
+//    }
+
+//    static double circumferenceOfCircle(double r) {
+//        return 2 * Math.PI * r;
+//    }
+//
+//    static double areaOfCircle(double r) {
+//        return Math.PI * r * r;
+//    }
 
 //    static void productOfTwoNumberEnteredByUser() {
 //        System.out.println("Enter two numbers: ");
