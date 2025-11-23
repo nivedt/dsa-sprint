@@ -12,28 +12,63 @@ public class functions {
 //        primeCheck();
 //        gradeCalculator();
 //        factorialProgram();
-        palindromeProgram();
+//        palindromeProgram();
+        tripletOrNot();
 
+    }
+
+    public static void tripletOrNot() {
+        System.out.println("Enter first numbers: ");
+        int a = input.nextInt();
+
+        System.out.println("Enter second numbers: ");
+        int b = input.nextInt();
+
+        System.out.println("Enter third numbers: ");
+        int c = input.nextInt();
+
+        if(isPythagoreanTriplet(a, b, c)) {
+            System.out.println("It is a Pythagorean Triplet.");
+        } else {
+            System.out.println("It is NOT a Pythagorean Triplet.");
+        }
+    }
+
+    static boolean isPythagoreanTriplet(int a, int b, int c) {
+        int x = Math.max(a, Math.max(b, c));
+        int y, z;
+        
+        if (x == a) {
+            y = b;
+            z = c;
+        } else if (x == b) {
+            y = a;
+            z = c;
+        } else {
+            y = a;
+            z = b;
+        }
+        return (y * y + z * z) == (x * x);
     }
     
-    public static void palindromeProgram() {
-        System.out.println("Enter a number: ");
-        int num = input.nextInt();
-        int n = num;
-        int reversed = 0;
-
-        while (n > 0) {
-            int digit = n % 10;
-            reversed = reversed * 10 + digit;
-            n /= 10;
-        }
-
-        if (num == reversed) {
-            System.out.println(num + " is a palindrome!");
-        } else {
-            System.out.println(num + " is not a palindrome");
-        }
-    }
+//    public static void palindromeProgram() {
+//        System.out.println("Enter a number: ");
+//        int num = input.nextInt();
+//        int n = num;
+//        int reversed = 0;
+//
+//        while (n > 0) {
+//            int digit = n % 10;
+//            reversed = reversed * 10 + digit;
+//            n /= 10;
+//        }
+//
+//        if (num == reversed) {
+//            System.out.println(num + " is a palindrome!");
+//        } else {
+//            System.out.println(num + " is not a palindrome");
+//        }
+//    }
 
 //    public static void factorialProgram() {
 //        System.out.println("Enter a number: ");
