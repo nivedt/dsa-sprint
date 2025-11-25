@@ -13,43 +13,90 @@ public class functions {
 //        gradeCalculator();
 //        factorialProgram();
 //        palindromeProgram();
-        tripletOrNot();
+//        tripletOrNot();
+//        allNumbersBetweenTwoPrime();
+        sumOfFirstNaturalNumbers();
 
     }
 
-    public static void tripletOrNot() {
-        System.out.println("Enter first numbers: ");
-        int a = input.nextInt();
+    public static void sumOfFirstNaturalNumbers() {
+        System.out.println("Enter a number: ");
 
-        System.out.println("Enter second numbers: ");
-        int b = input.nextInt();
+        int n = input.nextInt();
+        int sum = sumOFNaturalNumbers(n);
 
-        System.out.println("Enter third numbers: ");
-        int c = input.nextInt();
-
-        if(isPythagoreanTriplet(a, b, c)) {
-            System.out.println("It is a Pythagorean Triplet.");
-        } else {
-            System.out.println("It is NOT a Pythagorean Triplet.");
-        }
+        System.out.println(sum + " is the sum of First " + n + " natural numbers.");
     }
 
-    static boolean isPythagoreanTriplet(int a, int b, int c) {
-        int x = Math.max(a, Math.max(b, c));
-        int y, z;
-        
-        if (x == a) {
-            y = b;
-            z = c;
-        } else if (x == b) {
-            y = a;
-            z = c;
-        } else {
-            y = a;
-            z = b;
-        }
-        return (y * y + z * z) == (x * x);
+    static int sumOFNaturalNumbers(int n) {
+        return n * (n + 1) / 2;
     }
+
+//    public static void allNumbersBetweenTwoPrime() {
+//        System.out.println("Enter number 1: ");
+//        int num1 = input.nextInt();
+//
+//        System.out.println("Enter number 2: ");
+//        int num2 = input.nextInt();
+//
+//        printPrimes(num1, num2);
+//    }
+//
+//    static void printPrimes(int start, int end) {
+//        System.out.println("Prime numbers start between " + start + " and " + end);
+//
+//        for (int i = start; i <= end; i++) {
+//            if (isPrime(i)) {
+//                System.out.println(i + " ");
+//            }
+//        }
+//    }
+//
+//    static boolean isPrime(int n) {
+//        if (n <= 1) return false;
+//        if (n == 2) return true;
+//        if (n % 2 == 0) return false;
+//
+//        for (int i = 3; i * i <= n; i+=2 ) {
+//            if (n % i == 0) return false;
+//        }
+//
+//        return true;
+//    }
+
+//    public static void tripletOrNot() {
+//        System.out.println("Enter first numbers: ");
+//        int a = input.nextInt();
+//
+//        System.out.println("Enter second numbers: ");
+//        int b = input.nextInt();
+//
+//        System.out.println("Enter third numbers: ");
+//        int c = input.nextInt();
+//
+//        if(isPythagoreanTriplet(a, b, c)) {
+//            System.out.println("It is a Pythagorean Triplet.");
+//        } else {
+//            System.out.println("It is NOT a Pythagorean Triplet.");
+//        }
+//    }
+//
+//    static boolean isPythagoreanTriplet(int a, int b, int c) {
+//        int x = Math.max(a, Math.max(b, c));
+//        int y, z;
+//
+//        if (x == a) {
+//            y = b;
+//            z = c;
+//        } else if (x == b) {
+//            y = a;
+//            z = c;
+//        } else {
+//            y = a;
+//            z = b;
+//        }
+//        return (y * y + z * z) == (x * x);
+//    }
     
 //    public static void palindromeProgram() {
 //        System.out.println("Enter a number: ");
